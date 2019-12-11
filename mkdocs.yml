@@ -8,7 +8,6 @@ pages:
 - Python: python.md
 - R: r.md
 - Julia: julia.md
-- Spark: spark.md
 - Snakemake: snakemake.md
 - LaTeX: tex.md
 - Pandoc: pandoc.md
