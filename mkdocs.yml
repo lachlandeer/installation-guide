@@ -1,0 +1,23 @@
+site_name: Installation Guide
+
+pages:
+- Welcome: index.md
+- Ubuntu Packages - Essentials: ubuntu-essentials.md
+- Text Editor: text-editor.md
+- Git: git.md
+- Python: python.md
+- R: r.md
+- Julia: julia.md
+- Spark: spark.md
+- Snakemake: snakemake.md
+- LaTeX: tex.md
+- Pandoc: pandoc.md
+- Webscraping: webscraping.md
+- GIS Tools: gis-tools.md
+- Miscellany: misc.md
+- Contact: contact.md
+- Acknowledgements: acknowledgement.md
+
+theme: readthedocs
+markdown_extensions:
+  - admonition
