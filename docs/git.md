@@ -10,6 +10,20 @@ Install it:
 sudo apt-get install git
 ```
 
+## Verify Your Install:
+
+```
+git --version
+```
+
+with the output:
+
+```
+git version 2.20.1
+```
+
+The exact version will likely evolve over time.
+
 ## Basic Set Up
 
 To use Git we need to have some basic configuration set up.
