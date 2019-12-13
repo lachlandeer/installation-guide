@@ -3,6 +3,8 @@ site_name: Installation Guide
 pages:
 - Welcome: index.md
 - Ubuntu Packages - Essentials: ubuntu-essentials.md
+- VPN Setup: vpn.md
+- SSH Keys: ssh.md
 - Text Editor: text-editor.md
 - Git: git.md
 - Python: python.md
