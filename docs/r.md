@@ -71,7 +71,7 @@ install.packages(to_install)
 
 Note that many dependencies get installed along the way.
 
-I also want some packages to be installed from Github - these typicall arent on CRAN yet:
+I also want some packages to be installed from Github - these typically arent on CRAN yet:
 
 ```{r}
 from_gh <- c("ddsjoberg/gtsummary", 
