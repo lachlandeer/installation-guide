@@ -26,7 +26,7 @@ You will be prompted for the passcode to log into the server when you do this.
 
 Once this works, we want to check that you can now log in using the ssh key:
 
-```
+```{out}
 ssh user@host
 ```
 
