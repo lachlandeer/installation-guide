@@ -7,6 +7,7 @@ Enter the following into the command line.
 ```
 sudo apt-get install libudunits2-dev libfontconfig1-dev libcairo2-dev \
                      libcurl4-gnutls-dev librtmp-dev openssl \
-                     libxml2-dev libssl-dev fonts-font-awesome
+                     libxml2-dev libssl-dev fonts-font-awesome \
+                     gcc gcc-dev
 
 ```
