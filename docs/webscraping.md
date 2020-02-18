@@ -28,7 +28,7 @@ sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 ```
 
-If your install worked, you should get ChromeDriver 78.0.3904.105 returned if the installation was successful
+If your install worked, you should get ChromeDriver 7X.0.XXXX.XXX returned if the installation was successful - where the version must match the version of Chrome you have installed.
 
 ```{bash}
 chromedriver --version
