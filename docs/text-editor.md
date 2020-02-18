@@ -23,26 +23,53 @@ yields something like:
 1.41.0
 9579eda04fdb3a9bba2750f15193e5fafe16b959
 x64
-
 ```
+
+### Extra VS Code packages
+
+Here's what I am running at the moment:
+
+* Nord Wave (color theme)
+* Bracket Pair Colorizer 2
+* Code Spell Checker
+* Git Graph
+* Git History
+* Julia
+* Julia Formatter
+* LaTeX Workshop
+* Markdown All in One
+* Markdown PDF
+* Markdown Preview Enhanced
+* markdownlint
+* Python
+* R
+* r-check
+* TODO Highlight
+* vscode-icons
+* vscode-pdf
+* Whitespacer
+* YAML
+
 
 ## Atom
 
 Enter the following information to add a repository that has the Atom installation, then press Return:
 
 ```{bash}
-sudo add-apt-repository ppa:webupd8team/atom
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
 ```
 
 Install Atom by entering the following commands into a terminal and then pressing Return:
 
 ```{bash}
-sudo apt update
-sudo apt install atom
+sudo apt-get install atom
 ```
 
 ### Verifying Atom Installation
-We want Atom to be available from the command line. For Mac and Linux Users this is the default after you have started the program once. So please open Atom. Then open your terminal and type the following into the command line:
+
+We want Atom to be available from the command line. Then open your terminal and type the following into the command line:
 
 ```{bash}
 atom --version
@@ -51,10 +78,10 @@ atom --version
 followed by pressing Return you should see output like the following
 
 ```{out}
-Atom    : 1.28.2
-Electron: 2.0.5
-Chrome  : 61.0.3163.100
-Node    : 8.9.3
+Atom    : 1.44.0
+Electron: 4.2.7
+Chrome  : 69.0.3497.128
+Node    : 10.11.0
 ```
 
 But expect the version numbers to have changed
