@@ -25,7 +25,12 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 
 ### Foxit PDF Reader
 
-Go [here](https://www.foxitsoftware.com/downloads/) and download Foxit reader. Once downloaded double click to launch the install.
+Go [here](https://www.foxitsoftware.com/downloads/) and download Foxit reader. 
+Once downloaded double click to launch the install.
+
+!!! warning
+    I have nonstop issues at the moment with Foxit freezing on Ubuntu 19.10. 
+    Switched to Okular to basix pdf viewing
 
 ### Slack
 
