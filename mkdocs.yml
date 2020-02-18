@@ -14,7 +14,7 @@ pages:
 - LaTeX: tex.md
 - Pandoc: pandoc.md
 - Webscraping: webscraping.md
-- GIS Tools: gis-tools.md
+# - GIS Tools: gis-tools.md
 - Miscellany: misc.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
