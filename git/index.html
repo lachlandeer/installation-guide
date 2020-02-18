@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Git - Installation Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Git";
+    var mkdocs_page_input_path = "git.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Installation Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Welcome</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ubuntu-essentials/">Ubuntu Packages - Essentials</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vpn/">VPN Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh/">SSH Keys</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../text-editor/">Text Editor</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Git</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#git">Git</a></li>
+    
+
+    <li class="toctree-l2"><a href="#verify-your-install">Verify Your Install:</a></li>
+    
+
+    <li class="toctree-l2"><a href="#basic-set-up">Basic Set Up</a></li>
+    
+
+    <li class="toctree-l2"><a href="#introductions-to-git-where-to-look-for-help">Introductions to Git / Where to look for help:</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python/">Python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../julia/">Julia</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../snakemake/">Snakemake</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tex/">LaTeX</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pandoc/">Pandoc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webscraping/">Webscraping</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../misc/">Miscellany</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../acknowledgement/">Acknowledgements</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Installation Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Git</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="git">Git</h2>
+<p>Git is my go to version control system.</p>
+<p>It's usually installed on Ubuntu when you install the OS. 
+The last time I did this though, it was not.
+Install it:</p>
+<pre><code>sudo apt-get install git
+</code></pre>
+
+<h2 id="verify-your-install">Verify Your Install:</h2>
+<pre><code>git --version
+</code></pre>
+
+<p>with the output:</p>
+<pre><code>git version 2.20.1
+</code></pre>
+
+<p>The exact version will likely evolve over time.</p>
+<h2 id="basic-set-up">Basic Set Up</h2>
+<p>To use Git we need to have some basic configuration set up.
+If we forget to do this, the first time we try and commit something we will be prompted for it.</p>
+<pre><code>$ git config --global user.name &quot;FirstName LastName&quot;
+$ git config --global user.email &quot;something@domain.somethingelse&quot;
+</code></pre>
+
+<p>In addition, instead of Git opening Vim when it wants further information, I prefer it to open nano:</p>
+<pre><code>$ git config --global core.editor &quot;nano -w&quot;
+</code></pre>
+
+<p>And to handle line endings in a way that Windows can also deal with (this is totally optional):</p>
+<pre><code>$ git config --global core.autocrlf input
+</code></pre>
+
+<h2 id="introductions-to-git-where-to-look-for-help">Introductions to Git / Where to look for help:</h2>
+<ul>
+<li>Software Carpentry's <a href="http://swcarpentry.github.io/git-novice/">Version Control with Git</a></li>
+<li>PP4RS' <a href="https://github.com/pp4rs/2019-foundations-uzh-material/raw/master/03-git-local/git-local.pdf">Introduction to Git</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../text-editor/" class="btn btn-neutral" title="Text Editor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../text-editor/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

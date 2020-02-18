@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Text Editor - Installation Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Text Editor";
+    var mkdocs_page_input_path = "text-editor.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Installation Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Welcome</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ubuntu-essentials/">Ubuntu Packages - Essentials</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vpn/">VPN Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh/">SSH Keys</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Text Editor</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#text-editors">Text Editors</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#vs-code">VS Code</a></li>
+        
+            <li><a class="toctree-l3" href="#atom">Atom</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python/">Python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../julia/">Julia</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../snakemake/">Snakemake</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tex/">LaTeX</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pandoc/">Pandoc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webscraping/">Webscraping</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../misc/">Miscellany</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../acknowledgement/">Acknowledgements</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Installation Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Text Editor</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="text-editors">Text Editors</h1>
+<p>Here are two alternatives:</p>
+<ul>
+<li>VS Code - which I am currently using / transitioning towards</li>
+<li>Atom - what I used to use, and still feel attached to</li>
+</ul>
+<h2 id="vs-code">VS Code</h2>
+<pre><code class="bash">sudo snap install --classic code # or code-insiders
+</code></pre>
+
+<h3 id="verifying-vs-code-install">Verifying VS Code Install</h3>
+<pre><code class="bash">code --version
+</code></pre>
+
+<p>yields something like:</p>
+<pre><code class="out">1.41.0
+9579eda04fdb3a9bba2750f15193e5fafe16b959
+x64
+</code></pre>
+
+<h3 id="extra-vs-code-packages">Extra VS Code packages</h3>
+<p>Here's what I am running at the moment:</p>
+<ul>
+<li>Nord Wave (color theme)</li>
+<li>Bracket Pair Colorizer 2</li>
+<li>Code Spell Checker</li>
+<li>Git Graph</li>
+<li>Git History</li>
+<li>Julia</li>
+<li>Julia Formatter</li>
+<li>LaTeX Workshop</li>
+<li>Markdown All in One</li>
+<li>Markdown PDF</li>
+<li>Markdown Preview Enhanced</li>
+<li>markdownlint</li>
+<li>Python</li>
+<li>R</li>
+<li>r-check</li>
+<li>TODO Highlight</li>
+<li>vscode-icons</li>
+<li>vscode-pdf</li>
+<li>Whitespacer</li>
+<li>YAML</li>
+</ul>
+<h2 id="atom">Atom</h2>
+<p>Enter the following information to add a repository that has the Atom installation, then press Return:</p>
+<pre><code class="bash">wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo &quot;deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main&quot; &gt; /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
+</code></pre>
+
+<p>Install Atom by entering the following commands into a terminal and then pressing Return:</p>
+<pre><code class="bash">sudo apt-get install atom
+</code></pre>
+
+<h3 id="verifying-atom-installation">Verifying Atom Installation</h3>
+<p>We want Atom to be available from the command line. Then open your terminal and type the following into the command line:</p>
+<pre><code class="bash">atom --version
+</code></pre>
+
+<p>followed by pressing Return you should see output like the following</p>
+<pre><code class="out">Atom    : 1.44.0
+Electron: 4.2.7
+Chrome  : 69.0.3497.128
+Node    : 10.11.0
+</code></pre>
+
+<p>But expect the version numbers to have changed</p>
+<h3 id="extra-atom-packages">Extra Atom Packages</h3>
+<p>Here's a non-exhaustive list of packages I typically add to Atom:</p>
+<ul>
+<li>autocomplete-R</li>
+<li>autocomplete-python (choose Jedi as your engine when asked)</li>
+<li>autoflow</li>
+<li>language-r</li>
+<li>linter</li>
+<li>linter-lintr</li>
+<li>tablr</li>
+<li>platformio-ide-terminal</li>
+<li>project-plus</li>
+<li>language-markdown</li>
+<li>markdown-table-editor</li>
+<li>markdown-preview-plus</li>
+<li>autocomplete-citeproc</li>
+<li>open-unsupported-files</li>
+<li>advanced-open-file</li>
+<li>language-latex</li>
+<li>atom-latex</li>
+<li>whitespace</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../git/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ssh/" class="btn btn-neutral" title="SSH Keys"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ssh/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../git/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Python - Installation Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Python";
+    var mkdocs_page_input_path = "python.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Installation Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Welcome</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ubuntu-essentials/">Ubuntu Packages - Essentials</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vpn/">VPN Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ssh/">SSH Keys</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../text-editor/">Text Editor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Python</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#anaconda-python">Anaconda Python</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#verify-installation">Verify Installation</a></li>
+        
+            <li><a class="toctree-l3" href="#virtual-environment-wrapper">Virtual Environment Wrapper</a></li>
+        
+            <li><a class="toctree-l3" href="#other-useful-python-libraries">Other Useful Python Libraries</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../julia/">Julia</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../snakemake/">Snakemake</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tex/">LaTeX</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pandoc/">Pandoc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webscraping/">Webscraping</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../misc/">Miscellany</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../acknowledgement/">Acknowledgements</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Installation Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="anaconda-python">Anaconda Python</h1>
+<p>Anaconda is a pre-packaged Python distribution for scientific users.
+Unlike other Python distributions, this means that most additional functionality that we need to do numerical computing, statistics, plotting and the like come already installed - which saves us a lot of time.</p>
+<p>First, we need to download the Anaconda Bash Script (a file that will install things for us). Enter the following into the terminal:</p>
+<pre><code class="bash">curl -O https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+</code></pre>
+
+<p>Run the Anaconda Script by entering the following into the terminal:</p>
+<pre><code class="bash">bash Anaconda3-2019.10-Linux-x86_64.sh
+</code></pre>
+
+<p>As this script runs through, review and accept the license agreement.
+To do this press <code>Return</code> until you reach the end, and type 'yes'.</p>
+<p>After you agree to the license, you will be prompted to choose the location of the installation:</p>
+<pre><code class="bash">Anaconda3 will now be installed into this location:
+/home/lachlan/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/lachlan/anaconda3] &gt;&gt;&gt;
+
+</code></pre>
+
+<p>Use the default.</p>
+<p>The installation will continue - it does take some time, so be patient.</p>
+<p>Once the installation is complete, you will get the following output:</p>
+<pre><code class="bash">...
+installation finished.
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/lachlan/.bashrc ? [yes|no]
+&gt;&gt;&gt;
+</code></pre>
+
+<p>Type 'yes'.</p>
+<p>Now we need to refresh our terminal settings, so type the following and press return:</p>
+<pre><code class="bash">source ~/.bashrc
+</code></pre>
+
+<p>Now proceed to <a href="#verify-installation">verify your install</a>.</p>
+<!-- markdownlint-capture -->
+
+<!-- markdownlint-disable -->
+
+<div class="admonition tip">
+<p class="admonition-title">Updating the Anaconda Install</p>
+<p>In the future, if you want to find the most up to date Anaconda installer, go to the following website:</p>
+<p>https://repo.anaconda.com/archive/</p>
+<p>and find the most recent Anaconda3 installer for Linux-x86_64</p>
+</div>
+<!-- markdownlint-restore -->
+
+<h2 id="verify-installation">Verify Installation</h2>
+<p>To verify that the correct version of Python has been installed, usually we would follow the <code>programName --version</code> logic from before:</p>
+<pre><code class="bash">python --version
+</code></pre>
+
+<p>which yields:</p>
+<pre><code class="bash">Python 3.7.4
+</code></pre>
+
+<p>which tells us that Python is installed.
+But, because most operating systems these days have some version of Python installed, this doesn't guarantee that the Anaconda version is available for us to use from the terminal.</p>
+<p>To check, initiate Python by entering the following into a terminal and pressing <code>Return</code>:</p>
+<pre><code class="bash">python
+</code></pre>
+
+<p>You should now see something like:</p>
+<pre><code class="bash">Python 3.7.4 (default, Aug 13 2019, 20:35:49)
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+</code></pre>
+
+<p>where the operating system name should be different for Mac users.</p>
+<p>Now we see that the terminal is using the Anaconda version as we wanted.
+To quit the Python session we just opened, type the following at the <code>&gt;&gt;&gt;</code>:</p>
+<pre><code class="python">&gt;&gt;&gt; quit()
+</code></pre>
+
+<p>and you will return to your terminal.
+This was successful if you now see a <code>$</code> rather than the <code>&gt;&gt;&gt;</code>.</p>
+<!-- markdownlint-capture -->
+
+<!-- markdownlint-disable -->
+
+<div class="admonition tip">
+<p class="admonition-title">Anacondas Default Environment</p>
+<p>You will now notice there is a <code>(base)</code> sitting at the beginning of your terminal prompt:</p>
+<p><code>bash
+(base) lachlan@lachlan-x1:~$</code></p>
+<p>This is because by using Anaconda as our default Python install it is using it's own virtual environment, called 'base'. 
+We may want to turn this off.
+To do it (permanently):</p>
+<ul>
+<li>Create a new file <code>.condarc</code> in your home directory.</li>
+<li>Put the following line into it: <code>auto_activate_base: false</code></li>
+<li>Close the file and source it</li>
+</ul>
+<p>If you ever want it turned back on: <code>conda activate base</code> does the job in an individual terminal session.
+Turn it off with <code>conda deactivate</code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Python 2 vs Python 3</p>
+<p>Python 2 and 3 are incompatible in syntax. If you had Python 2 previously installed on your machine, you might have seen <code>Python 2.x.x</code> above. In that case try typing</p>
+<p><code>python3 --version</code></p>
+<p>instead. Now you should see a message like the one above and are good to go for the course.</p>
+</div>
+<!-- markdownlint-restore -->
+
+<h2 id="virtual-environment-wrapper">Virtual Environment Wrapper</h2>
+<p>I use the Virtual Environment Wrapper package to control my virtual environments.
+It's installed via pip:</p>
+<pre><code class="bash">pip install virtualenvwrapper
+</code></pre>
+
+<p>Now we open our <code>.bashrc</code> and enter the following info:</p>
+<pre><code class="bash">export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source $HOME/.local/bin/virtualenvwrapper.sh
+</code></pre>
+
+<p>Close and source the <code>.bashrc</code> and we are ready to use it.</p>
+<h2 id="other-useful-python-libraries">Other Useful Python Libraries</h2>
+<p>Install via pip</p>
+<ul>
+<li>mkdocs</li>
+<li>mkdocs-material</li>
+<li>pymdown-extensions</li>
+<li>linearmodels</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../r/" class="btn btn-neutral float-right" title="R">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../git/" class="btn btn-neutral" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../git/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../r/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
