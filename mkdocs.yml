@@ -11,6 +11,7 @@ pages:
 - R: r.md
 - Julia: julia.md
 - Snakemake: snakemake.md
+- Docker: docker.md
 - LaTeX: tex.md
 - Pandoc: pandoc.md
 - Webscraping: webscraping.md
