@@ -1,8 +1,8 @@
-# Installation Guide for Setting Up an Ubuntu Machine for Quantitative Marketing & Economics Research
+# Installation Guide for Setting Up an Ubuntu Flavour Machine for Quantitative Marketing & Economics Research
 
 These pages document what I need to do when setting up a new Ubuntu machine for my research workflow.
 
-I most recently did this for `Ubuntu 19.10` in December 2019.
+I most recently did this for `PopOS 20.04` in June 2020.
 
 
 !!! summary

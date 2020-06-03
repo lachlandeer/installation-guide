@@ -13,4 +13,4 @@ Material is licensed under a CC-BY-SA-4.0 license.
 
 ## Suggested Citation
 
-* Lachlan Deer, 2020, Installation Guide for Setting Up an Ubuntu Machine for Quantitative Marketing & Economics Research.
+* Lachlan Deer, 2020, Installation Guide for Setting Up an Ubuntu Flavored Machine for Quantitative Marketing & Economics Research.
