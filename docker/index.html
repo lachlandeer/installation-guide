@@ -96,6 +96,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#verify-installation">Verify Installation:</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#run-docker-without-sudo">Run Docker without sudo</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -116,7 +118,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../news/">News</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../NEWS/">News</a>
                     </li>
                 </ul>
                 <ul>
@@ -207,6 +209,33 @@ sub   rsa4096 2017-02-22 [S]
 
 <h2 id="verify-installation">Verify Installation:</h2>
 <pre><code class="bash">$ sudo docker run hello-world
+</code></pre>
+
+<h2 id="run-docker-without-sudo">Run Docker without <code>sudo</code></h2>
+<p>As installed above all Docker commands need to be prefixed with <code>sudo</code>. 
+Let's change this as follows:</p>
+<ul>
+<li>Create a group, call it docker.</li>
+</ul>
+<pre><code class="bash">$ sudo groupadd docker
+</code></pre>
+
+<ul>
+<li>Add your user to the docker group.</li>
+</ul>
+<pre><code class="bash">$ sudo usermod -aG docker $USER
+</code></pre>
+
+<ul>
+<li>Run the following command to activate the changes to groups:</li>
+</ul>
+<pre><code class="bash">$ newgrp docker 
+</code></pre>
+
+<ul>
+<li>Verify that you can run docker commands without sudo.</li>
+</ul>
+<pre><code class="bash">$ docker run hello-world
 </code></pre>
               
             </div>
