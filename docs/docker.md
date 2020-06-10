@@ -63,3 +63,25 @@ Update the apt package index, and install the latest version of Docker Engine an
 ```{bash}
 $ sudo docker run hello-world
 ```
+
+## Run Docker without `sudo`
+
+As installed above all Docker commands need to be prefixed with `sudo`. 
+Let's change this as follows:
+
+* Create a group, call it docker.
+``` bash
+$ sudo groupadd docker
+```
+* Add your user to the docker group.
+```bash
+$ sudo usermod -aG docker $USER
+```
+* Run the following command to activate the changes to groups:
+```bash
+$ newgrp docker 
+```
+* Verify that you can run docker commands without sudo.
+```bash
+$ docker run hello-world
+```
